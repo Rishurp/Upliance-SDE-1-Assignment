@@ -1,5 +1,9 @@
+import Counter from "./Components/Counter";
+
 function App() {
-  return <>Assignment Setup ...</>;
+  return <>
+  <Counter/>
+  </>
 }
 
 export default App; 
