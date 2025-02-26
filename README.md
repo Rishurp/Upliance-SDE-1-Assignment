@@ -1,50 +1,80 @@
-# React + TypeScript + Vite
+# Upliance SDE-1 Assessment 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+This project is a React-based web application that includes multiple components such as a counter with animated effects, a rich text editor, authentication using Firebase, a protected route system, and a user form with local storage capabilities.
 
-Currently, two official plugins are available:
+## Features
+- **Counter Component**: 
+  - Uses `useState` for state management.
+  - Implements animations with `react-spring`.
+  - Includes increment, decrement, and reset buttons.
+  
+- **Rich Text Editor**:
+  - Built with `react-quill` for rich text editing.
+  - Saves and loads data from `localStorage`.
+  
+- **Authentication**:
+  - Utilizes Firebase authentication.
+  - Google Sign-In functionality.
+  - Allows users to sign in, sign out, and access protected routes.
+  
+- **Protected Routes**:
+  - Restricts access to certain pages based on authentication status.
+  - Redirects unauthorized users to the home page.
+  
+- **User Form**:
+  - Uses Material-UI components.
+  - Stores user data in `localStorage`.
+  - Displays a warning when navigating away with unsaved changes.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
+- React
+- TypeScript
+- Firebase Authentication
+- React Router
+- React Spring
+- React Quill
+- Material-UI
 
-## Expanding the ESLint configuration
+## Installation
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/Rishurp/Upliance-SDE-1-Assignment.git
+   ```
+3. Install dependencies:
+   ```sh
+   npm install
+   ```
+4. Start the development server:
+   ```sh
+   npm run dev 
+   ```
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Usage
+- Open `http://localhost:5173` in your browser.
+- Use the navigation bar to switch between components.
+- Sign in using Google to access protected routes.
+- Use the counter, text editor, and user form as needed.
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Folder Structure
+```
+├── src
+│   ├── components
+│   │   ├── Counter.tsx
+│   │   ├── Editor.tsx
+│   │   ├── Navbar.tsx
+│   │   ├── ProtectedRoute.tsx
+│   │   ├── UserForm.tsx
+│   ├── AuthContext.tsx
+│   ├── firebaseConfig.ts
+│   ├── App.tsx
+│   ├── index.tsx
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Screenshots
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Here's the preview of the application 
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+
+![Home](c:\Users\Rishu\Pictures\Screenshots\Screenshot 2025-02-26 221144.png)
+![After_Authentication](c:\Users\Rishu\Pictures\Screenshots\Screenshot 2025-02-26 221315.png)
