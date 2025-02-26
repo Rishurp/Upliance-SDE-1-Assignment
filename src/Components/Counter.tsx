@@ -17,7 +17,7 @@ const Counter = () => {
   });
 
   return (
-    <div className="relative w-full h-screen flex flex-col items-center justify-center bg-white overflow-hidden">
+    <div className="relative w-full h-full flex flex-col items-center justify-center bg-white overflow-hidden">
       <animated.div
         style={fillAnimation}
         className="absolute bottom-0 left-0 w-full bg-blue-500"

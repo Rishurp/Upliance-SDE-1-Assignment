@@ -25,7 +25,7 @@ const Editor: React.FC = () => {
       sx={{
         maxWidth: 600,
         mx: "auto",
-        mt: 5,
+        mt: 20,
         p: 3,
         boxShadow: 3,
         borderRadius: 2,
