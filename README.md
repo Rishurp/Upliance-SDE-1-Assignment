@@ -3,6 +3,9 @@
 ## Overview
 This project is a React-based web application that includes multiple components such as a counter with animated effects, a rich text editor, authentication using Firebase, a protected route system, and a user form with local storage capabilities.
 
+
+## Note: You must sign in first to access the user form and rich text editor.
+
 ## Features
 - **Counter Component**: 
   - Uses `useState` for state management.
@@ -76,5 +79,7 @@ This project is a React-based web application that includes multiple components 
 Here's the preview of the application 
 
 
-![Home](c:\Users\Rishu\Pictures\Screenshots\Screenshot 2025-02-26 221144.png)
-![After_Authentication](c:\Users\Rishu\Pictures\Screenshots\Screenshot 2025-02-26 221315.png)
+![Home](https://github.com/user-attachments/assets/517ca278-da03-40d8-9530-bfbdc295efc7)
+
+![After_Authentication](https://github.com/user-attachments/assets/c35a57f5-9b8f-4e70-97ee-3afc6488c7f8)
+
